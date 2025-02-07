@@ -19,10 +19,35 @@ A brief overview of the project:
     - They offer choice, and recommendations, but not always surprise
 
 ## Features
+System:
+This project creates a simple movie recommendation system through the use of the packages scikit-learn and pandas
+- Movie recommendations
+  - Using content markers (Overview, Director, Genre) and an input movie this program produces another film that is likely to be similar in content/style.
+  - e.g. if you Enter Pulp Fiction the recommendation will be Django Unchained.
+  - The database used for this sytem is IMDB top 1000 movies
+  - Extension to the system:
+    - I could also include:
+      - region the movie was made
+
+- Alternatives/Improvements:
+  - I would like to test out user preference systems and if possible incorporate them into these functions to see how these two methods differ.
+  
 
 ## Installation
+Software requirements:
+- This has been run and tested on Python 3.12
+- Additional requirements can be found in requirements.txt
 
-## Steps to Install
+Please note:
+- Flask web framework and SqlAlchemy are not necessarily needed
+
+Flask has been included for the potential of expanding this project to a web based service
+SQL is my preference for database storage for this project. However, for testing this could be omitted.
+
+### Steps to Install
+- Flask web framework
+- SQLAlchemy for database management
+- 
 
 ## Usage
 
