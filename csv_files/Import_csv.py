@@ -1,5 +1,4 @@
 import pandas as pd
-from datetime import datetime
 from app import app, db, Movie
 
 
@@ -7,8 +6,6 @@ from app import app, db, Movie
 movies_df = pd.read_csv('imdb_top_1000.csv')
 
 ## Data clean
-# Change the column in this row to a datetime object -- not needed in current implementation
-#movies_df['Released_Year'] = pd.to_datetime(movies_df['Released_Year'], errors='coerce')
 
 # Gross column has commas, they need to be cleaned out
 movies_df['Gross'] = pd.to_numeric(movies_df['Gross'], errors='coerce')
